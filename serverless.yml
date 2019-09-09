@@ -64,6 +64,12 @@ functions:
       - http:
           path: hello
           method: get
+  pub_sns:
+    handler: handler.pub_sns
+    events:
+      - http:
+          path: hello
+          method: post
 
   sub_sns:
     handler: handler.sub_sns
